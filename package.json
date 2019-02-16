@@ -4,7 +4,7 @@
   "description": "Extension which helps you be inclusive in your speech.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch"
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

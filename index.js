@@ -25,4 +25,7 @@ const validateWords = categories => {
     .then(all => [].concat.apply([], [].concat.apply([], all)));
 };
 
-module.exports.validate = s => new Promise((resolve, reject) => wordpos.getPOS(s, cat => validateWords(cat).then(resolve, reject)));
+const strictValidate = s => new Promise((resolve, reject) => wordpos.getPOS(s, cat => validateWords(cat).then(resolve, reject)));
+const ignoreSynonyms = s => strictValidate(s).then(errors => errors.filter(e => !e.syn));
+
+module.exports.validate = (sentence, strict = true) => strict ? strictValidate(sentence) : ignoreSynonyms(sentence);
