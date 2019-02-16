@@ -1,7 +1,7 @@
 {
   "name": "gently-js",
   "version": "0.0.0",
-  "description": "Module which returns the offensive words in a sentence. A soft reminder to be nicer to each other ❤️.",
+  "description": "Module which returns the offensive words in a string. A soft reminder to be nicer to each other ❤️.",
   "main": "index.js",
   "scripts": {
     "test:watch": "jest --watch",

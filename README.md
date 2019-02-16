@@ -17,15 +17,15 @@ npm i gently-js
 Use the module with:
 
 ```javascript
-const { validate } = require('gently-js);
+const { validate } = require('gently-js');
 
-validate({ text: "I'm pissed off all of this." })
+validate({ text: "I'm pissed off of all of this." })
   .then(warnings => {
     // [{ word: 'pissed' }]
     console.log(warnings);
   });
 
-validate({ text: "I'm pissed off all of this.", strict: true })
+validate({ text: "I'm pissed off of all of this.", strict: true })
   .then(warnings => {
     // [{ word: 'off', syn: 'murder' }, { word: 'pissed' }]
     console.log(warnings);
