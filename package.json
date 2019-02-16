@@ -1,6 +1,6 @@
 {
   "name": "gently-js",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Module which returns the offensive words in a string. A soft reminder to be nicer to each other ❤️.",
   "main": "index.js",
   "scripts": {
