@@ -1,0 +1,30 @@
+{
+  "name": "includify",
+  "version": "1.0.0",
+  "description": "Extension which helps you be inclusive in your speech.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgechev/includify.git"
+  },
+  "keywords": [
+    "nlp",
+    "inclusion",
+    "coc"
+  ],
+  "author": "Minko Gechev <mgechev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mgechev/includify/issues"
+  },
+  "homepage": "https://github.com/mgechev/includify#readme",
+  "dependencies": {
+    "wordpos": "^1.2.0"
+  },
+  "devDependencies": {
+    "jest": "^24.1.0"
+  }
+}
