@@ -1,10 +1,11 @@
 {
-  "name": "includify",
-  "version": "1.0.0",
-  "description": "Extension which helps you be inclusive in your speech.",
+  "name": "gently-js",
+  "version": "0.0.0",
+  "description": "Module which returns the offensive words in a sentence. A soft reminder to be nicer to each other ❤️.",
   "main": "index.js",
   "scripts": {
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "release": "rm -rf dist && mkdir dist && cp index.js package.json README.md words.json dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   },
   "homepage": "https://github.com/mgechev/includify#readme",
   "dependencies": {
+    "dictionary-en-us": "^2.0.0",
+    "nspell": "^2.1.1",
     "wordpos": "^1.2.0"
   },
   "devDependencies": {
